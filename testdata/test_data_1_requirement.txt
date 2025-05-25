@@ -1,0 +1,2 @@
+As a quality engineer, I would like to test this web based calculator applicaiton, in this requirment, I would like to work on the Division Operation. 
+I want to create three division testing cases, eg, 8 divide by 2, -9 divide by 3, 12 divide by 0.

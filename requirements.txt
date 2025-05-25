@@ -1,0 +1,8 @@
+selenium
+structlog
+requests
+pytest
+langchain
+langchain-community
+webdriver-manager
+openai
