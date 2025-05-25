@@ -10,7 +10,7 @@ This isn’t just automation. This is autonomy.
 
 Manual UI test creation is time-intensive, repetitive, and difficult to scale across fast-moving projects. Even with modern tools, QAs are burdened with translating requirements into code, which slows innovation and increases missed scenarios.
 
-<img src="assets/images/QA_Agent.png" alt="LangChain Agent Workflow" width="400" height="400"/>
+<img src="assets/images/qa_agent.png" alt="LangChain Agent Workflow" width="400" height="400"/>
 
 ### :anchor: **Solution**
 
