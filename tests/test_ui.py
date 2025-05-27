@@ -130,4 +130,3 @@ def test_subtract_negative_numbers(driver):
     except Exception as e:
         log_event = {"event": "test_failed", "test": test_name, "error": str(e)}
         raise
-

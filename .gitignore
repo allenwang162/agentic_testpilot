@@ -50,3 +50,7 @@ MANIFEST
 
 # Config file with secrets
 src/config.py
+
+# Exclude response and testing_results folders
+response/
+testing_results/

@@ -1,0 +1,44 @@
+=============================================== test session starts ================================================
+platform win32 -- Python 3.13.3, pytest-8.3.5, pluggy-1.6.0
+rootdir: C:\Dev\AI_Projects\agentic_testpolit
+plugins: anyio-4.9.0, langsmith-0.3.42
+collected 9 items
+
+tests\test_ui.py ..F..F.FF                                                                                    [100%]
+
+===================================================== FAILURES =====================================================
+____________________________________________ test_add_negative_numbers _____________________________________________
+tests\test_ui.py:78: in test_add_negative_numbers
+    assert get_result(driver) == "-8"
+E   AssertionError: assert '8' == '-8'
+E     
+E     - -8
+E     + 8
+__________________________________________ test_subtract_negative_numbers __________________________________________
+tests\test_ui.py:128: in test_subtract_negative_numbers
+    assert get_result(driver) == "-6"
+E   AssertionError: assert '6' == '-6'
+E     
+E     - -6
+E     + 6
+___________________________________________ test_divide_negative_9_by_3 ____________________________________________
+tests\test_ui.py:151: in test_divide_negative_9_by_3
+    assert get_result(driver) == "-3"
+E   AssertionError: assert '3' == '-3'
+E     
+E     - -3
+E     + 3
+_______________________________________________ test_divide_12_by_0 ________________________________________________
+tests\test_ui.py:160: in test_divide_12_by_0
+    assert get_result(driver) == "Infinity" or get_result(driver) == "Error"
+tests\test_ui.py:28: in get_result
+    WebDriverWait(driver, 5).until(result_not_default)
+C:\Users\ywang162\AppData\Local\Programs\Python\Python313\Lib\site-packages\selenium\webdriver\support\wait.py:138: in until
+    raise TimeoutException(message, screen, stacktrace)
+E   selenium.common.exceptions.TimeoutException: Message:
+============================================= short test summary info ==============================================
+FAILED tests/test_ui.py::test_add_negative_numbers - AssertionError: assert '8' == '-8'
+FAILED tests/test_ui.py::test_subtract_negative_numbers - AssertionError: assert '6' == '-6'
+FAILED tests/test_ui.py::test_divide_negative_9_by_3 - AssertionError: assert '3' == '-3'
+FAILED tests/test_ui.py::test_divide_12_by_0 - selenium.common.exceptions.TimeoutException: Message:
+=========================================== 4 failed, 5 passed in 18.63s ===========================================
