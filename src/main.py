@@ -14,6 +14,4 @@ agent = initialize_agent(
 )
 
 if __name__ == "__main__":
-    agent.run("read the my testing case requirements test_data_1_requirement.txt and generate test cases, save them to tests/test_ui.py, and run the test cases.")
-# agent.invoke({"input": "Use the tool `run_pytest_on_file` to run tests/test_calculator_ui.py"})
-# agent.run("Use the tool to run pytest on tests/test_ui.py and post the results to Jira issue # QAUTO-4166.")
+    agent.run("read the my testing case requirements test_data_1_requirement.txt and generate test cases, save them to tests/test_ui.py, and run the test cases.but dont send email ")

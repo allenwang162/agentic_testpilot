@@ -130,3 +130,111 @@ def test_subtract_negative_numbers(driver):
     except Exception as e:
         log_event = {"event": "test_failed", "test": test_name, "error": str(e)}
         raise
+
+
+def test_divide_8_by_2(driver):
+    clear_calculator(driver)
+    click_button(driver, "number-8")
+    click_button(driver, "divide-btn")
+    click_button(driver, "number-2")
+    click_button(driver, "equals-btn")
+    assert get_result(driver) == "4"
+
+def test_divide_negative_9_by_3(driver):
+    clear_calculator(driver)
+    click_button(driver, "subtract-btn")
+    click_button(driver, "number-9")
+    click_button(driver, "divide-btn")
+    click_button(driver, "number-3")
+    click_button(driver, "equals-btn")
+    assert get_result(driver) == "-3"
+
+def test_divide_12_by_0(driver):
+    clear_calculator(driver)
+    click_button(driver, "number-1")
+    click_button(driver, "number-2")
+    click_button(driver, "divide-btn")
+    click_button(driver, "number-0")
+    click_button(driver, "equals-btn")
+    assert get_result(driver) == "Infinity"
+
+
+def test_divide_8_by_2(driver):
+    clear_calculator(driver)
+    click_button(driver, "number-8")
+    click_button(driver, "divide-btn")
+    click_button(driver, "number-2")
+    click_button(driver, "equals-btn")
+    assert get_result(driver) == "4"
+
+def test_divide_negative_9_by_3(driver):
+    clear_calculator(driver)
+    click_button(driver, "subtract-btn")
+    click_button(driver, "number-9")
+    click_button(driver, "divide-btn")
+    click_button(driver, "number-3")
+    click_button(driver, "equals-btn")
+    assert get_result(driver) == "-3"
+
+def test_divide_12_by_0(driver):
+    clear_calculator(driver)
+    click_button(driver, "number-1")
+    click_button(driver, "number-2")
+    click_button(driver, "divide-btn")
+    click_button(driver, "number-0")
+    click_button(driver, "equals-btn")
+    assert get_result(driver) == "Infinity" or get_result(driver) == "Error"
+
+
+def test_divide_8_by_2(driver):
+    clear_calculator(driver)
+    click_button(driver, "number-8")
+    click_button(driver, "divide-btn")
+    click_button(driver, "number-2")
+    click_button(driver, "equals-btn")
+    assert get_result(driver) == "4"
+
+def test_divide_negative_9_by_3(driver):
+    clear_calculator(driver)
+    click_button(driver, "subtract-btn")
+    click_button(driver, "number-9")
+    click_button(driver, "divide-btn")
+    click_button(driver, "number-3")
+    click_button(driver, "equals-btn")
+    assert get_result(driver) == "-3"
+
+def test_divide_12_by_0(driver):
+    clear_calculator(driver)
+    click_button(driver, "number-1")
+    click_button(driver, "number-2")
+    click_button(driver, "divide-btn")
+    click_button(driver, "number-0")
+    click_button(driver, "equals-btn")
+    assert get_result(driver) == "Infinity"
+
+
+def test_divide_8_by_2(driver):
+    clear_calculator(driver)
+    click_button(driver, "number-8")
+    click_button(driver, "divide-btn")
+    click_button(driver, "number-2")
+    click_button(driver, "equals-btn")
+    assert get_result(driver) == "4"
+
+def test_divide_negative_9_by_3(driver):
+    clear_calculator(driver)
+    click_button(driver, "subtract-btn")
+    click_button(driver, "number-9")
+    click_button(driver, "divide-btn")
+    click_button(driver, "number-3")
+    click_button(driver, "equals-btn")
+    assert get_result(driver) == "-3"
+
+def test_divide_12_by_0(driver):
+    clear_calculator(driver)
+    click_button(driver, "number-1")
+    click_button(driver, "number-2")
+    click_button(driver, "divide-btn")
+    click_button(driver, "number-0")
+    click_button(driver, "equals-btn")
+    assert get_result(driver) == "Infinity" or get_result(driver) == "Error"
